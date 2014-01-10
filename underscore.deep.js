@@ -33,52 +33,11 @@ _.mixin({
     }
 
     return value;
-  }
+  },
 
-});
-
-// Usage:
-//
-// var obj = {
-//   a: {
-//     b: {
-//       c: {
-//         d: ['e', 'f', 'g']
-//       }
-//     }
-//   }
-// };
-//
-// Get deep value
-// _.deep(obj, 'a.b.c.d[2]'); // 'g'
-//
-// Set deep value
-// _.deep(obj, 'a.b.c.d[2]', 'george');
-//
-// _.deep(obj, 'a.b.c.d[2]'); // 'george'
-
-
-_.mixin({
   pluckDeep: function (obj, key) {
     return _.map(obj, function (value) { return _.deep(value, key); });
-  }
-});
-
-// Usage:
-//
-// var arr = [{
-//   deeply: {
-//     nested: 'foo'
-//   }
-// }, {
-//   deeply: {
-//     nested: 'bar'
-//   }
-// }];
-//
-// _.pluckDeep(arr, 'deeply.nested'); // ['foo', 'bar']
-
-_.mixin({
+  },
 
  // Return a copy of an object containing all but the blacklisted properties.
   unpick: function (obj) {

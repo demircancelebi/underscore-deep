@@ -1,6 +1,6 @@
 {
     "name": "underscore-deep",
-    "version": "1.0",
+    "version": "1.0.1",
     "main": "underscore.deep.js",
     "homepage": "http://github.com/glencrossbrunet/underscore-calculate",
     "keywords": [ "underscore", "_", "deep", "nested", "object", "property" ],
