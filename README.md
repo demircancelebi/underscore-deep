@@ -2,7 +2,7 @@
 
 ##Usage
 
-`### _.deep`
+### ` _.deep`
 ```javascript
 var obj = {
   a: {
@@ -15,19 +15,19 @@ var obj = {
 };
 ```
 
-`####Get deep value`
+### `#Get deep value`
 ```javascript
 _.deep(obj, 'a.b.c.d[2]'); // 'g'
 ```
 
-`####Set deep value`
+### `#Set deep value`
 ```javascript
 _.deep(obj, 'a.b.c.d[2]', 'george');
 
 _.deep(obj, 'a.b.c.d[2]'); // 'george'
 ```
 
-`### _.pluckDeep`
+### ` _.pluckDeep`
 
 ```javascript
 var arr = [{
@@ -44,7 +44,7 @@ _.pluckDeep(arr, 'deeply.nested'); // ['foo', 'bar']
 ```
 
 
-`###_.unpick`
+### `_.unpick`
 
 Return a copy of an object containing all but the blacklisted properties.
 
